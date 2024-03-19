@@ -1,15 +1,3 @@
+### Ayurvedic dosha questionnaire
 
-### Development mode
-```
-npm install
-npx shadow-cljs watch app
-```
-start a ClojureScript REPL
-```
-npx shadow-cljs browser-repl
-```
-### Building for production
-
-```
-npx shadow-cljs release app
-```
+A somewhat overengineered quiz. Should be accessible [here](https://dmos62.github.io/ayurveda-dosha-quiz/).

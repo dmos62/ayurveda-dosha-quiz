@@ -34,9 +34,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4 
 
-      - name: Set up Java and Leiningen
-        uses: sdkman/sdkman-action@v1
-        id: sdkman
+      - run: |
+        curl -s "https://get.sdkman.io?rcupdate=false" | bash
+        source "$HOME/.sdkman/bin/sdkman-init.sh"
+        sdkman_auto_answer=true
+      - run: |
+        sdk env install
 
       - name: Set up Node.js
         uses: actions/setup-node@v3
